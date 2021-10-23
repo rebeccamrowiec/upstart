@@ -1,0 +1,92 @@
+.section {
+  margin: 2rem 0;
+  padding: 0 1rem;
+
+  &--home-hero {
+    margin: 0;
+  }
+
+  // &--first {
+  //   margin: 10rem 0 2rem;
+  // }
+
+  // &--second {
+  //   padding: 2rem 1rem;
+  // }
+
+  // &--instagram-heading {
+  //   margin: 2rem 0 0;
+  //   padding: 0 1rem;
+  // }
+
+  // &--instagram-slider {
+  //   margin: 0 0 2rem;
+  //   padding: 0;
+  // }
+}
+
+@media screen and (min-width: 576px) {
+  .section {
+    margin: 3rem 0;
+    padding: 0 2rem;
+
+    &--home-hero {
+      margin: 0;
+    }
+
+    // &--first {
+    //   margin: 6rem 0 3rem;
+    // }
+
+    // &--second {
+    //   padding: 3rem 2rem;
+    // }
+
+    // &--instagram-heading {
+    //   margin: 3rem 0 0;
+    //   padding: 0 2rem;
+    // }
+
+    // &--instagram-slider {
+    //   margin: 0 0 3rem;
+    //   padding: 0;
+    // }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    margin: 8rem 0;
+    padding: 0 8rem;
+
+    &--home-hero {
+      margin: 0;
+    }
+
+    &--block-text-with-image {
+      padding: 8rem 8rem;
+    }
+
+    // &--second {
+    //   padding: 5rem 3rem;
+    // }
+
+    // &--instagram-heading {
+    //   margin: 5rem 0 0;
+    //   padding: 0 3rem;
+    // }
+
+    // &--instagram-slider {
+    //   margin: 0 0 5rem;
+    //   padding: 0;
+    // }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  // .section {
+  //   &--first {
+  //     margin: 10rem 0 5rem;
+  //   }
+  // }
+}

@@ -1,0 +1,74 @@
+.home-hero {
+  position: relative;
+  background-color: $color-blue;
+  width: 100vw;
+  height: 100vh;
+
+  &__mask {
+    // position: absolute;
+    // bottom: 0;
+    // object-position: left bottom;
+    // border: none;
+    // @include image-cover;
+
+    position: absolute;
+    top: -650px;
+    right: -750px;
+  }
+
+  &__section {
+    height: 100%;
+    @include flex-center(row);
+  }
+
+  &__container {
+    height: 55%; // 65%
+  }
+
+  &__row {
+    height: 100%;
+  }
+
+  &__col {
+
+  }
+  
+  &__info-container {
+    position: relative;
+    height: 100%;
+    @include justify-flex-end(row);
+  }
+
+  &__info-wrapper {
+    position: absolute;
+    right: 25%;
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    color: $color-white;
+  }
+
+  &__image-wrapper {
+    position: relative;
+    height: 100%;
+  }
+
+  &__image {
+    border-radius: 5px;
+    @include image-cover;
+  }
+}
+
+
+
+// Start of MQ's
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+// End of MQ's

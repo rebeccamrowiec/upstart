@@ -1,0 +1,15 @@
+.socials {
+  &__container {
+    @include justify-flex-start(row);
+  }
+
+  &__link {
+    display: block;
+    margin: 0 3rem 0 0;
+    text-decoration: none;
+  }
+
+  &__icon {
+
+  }
+}

@@ -1,0 +1,58 @@
+// Command to run in terminal for compiling
+// 1. Install Dart SASS
+/*
+2.
+sass --watch assets/styles/main.scss:assets/styles/main.min.css --style compressed
+*/
+
+// Import Bootsrap Grid
+@import "bootstrap/bootstrap-grid";
+
+// Import Abstracts
+@import
+  "abstracts/fonts",
+  "abstracts/variables",
+  "abstracts/mixins";
+
+// Import Base
+@import
+  "base/reset";
+
+// Import Components
+@import
+  "assets/sections",
+  "assets/button",
+  "assets/overlay";
+
+// Import Components
+@import
+  "components/header",
+  "components/socials",
+  "components/contact-form",
+  "components/footer",
+  "components/cookies";
+
+// Import Blocks
+@import
+"blocks/accordion",
+"blocks/full-width-image",
+"blocks/text-with-image",
+"blocks/text-editor",
+"blocks/statement",
+"blocks/video-embed";
+
+// Import Home
+@import
+"home/hero";
+
+// Import Pages
+@import
+"pages/error-404";
+
+// Import Cross Browser
+@import
+  "cross-browser/cross-browser";
+
+// Import Responsive
+@import
+  "responsive/responsive";
