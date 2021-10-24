@@ -23,6 +23,39 @@
     }
   }
 
+  
+  &__featured-logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+    &:first-of-type {
+      justify-content: flex-start;
+    }
+
+    &:last-of-type {
+      justify-content: flex-end;
+    }
+  }
+
+  &__featured-logo {
+    display: block;
+    
+    &--one {
+      width: 80%;
+    }
+
+    &--two {
+      width: 50%;
+    }
+
+    &--three {
+      width: 40%;
+    }
+  }
+
   &__logo {
     display: block;
     margin-bottom: 2rem;
