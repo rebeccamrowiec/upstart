@@ -6,7 +6,7 @@ $home_hero_image = get_field('home_hero_image'); // IMAGE ARR
 
 <!-- Block: Homepage Hero -->
 <div class="home-hero">
-  <!-- <img class="home-hero__mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/masks/arrow-mask-desktop.svg" /> -->
+  <img class="home-hero__mask" src="<?php echo get_template_directory_uri(); ?>/assets/images/masks/arrow-mask-desktop.svg" />
 
   <section class="section section--home-hero home-hero__section">
     <div class="container-fluid home-hero__container">

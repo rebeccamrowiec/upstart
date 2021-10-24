@@ -14,6 +14,7 @@
     position: absolute;
     top: -650px;
     right: -750px;
+    z-index: 1;
   }
 
   &__section {
@@ -22,6 +23,8 @@
   }
 
   &__container {
+    position: relative;
+    z-index: 1;
     height: 55%; // 65%
   }
 
