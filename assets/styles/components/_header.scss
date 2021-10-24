@@ -7,23 +7,58 @@ body.nav-open .site-header__nav {
 }
 
 .site-header {	
-  &__bar-container {
+	&__outer-section {
 		background-color: transparent;
+
 		z-index: 15;
 		position: fixed;
 		top: 0;
-		padding: 0 8rem;
+
 		width: 100%;
 		height: 120px;
-		@include justify-flex-between(row);
 
 		&.scrolling {
 			transition: all 0.2s ease;
 			background-color: $color-blue;
 		}
+	}
+
+	&__inner-section {
+		height: 100%;
+	}
+
+	&__container {
+		height: 100%;
+
+	}
+
+	&__row {
+		height: 100%;
+
+	}
+
+	&__col {
+
+	}
+
+  &__bar-container {
+		// background-color: transparent;
+		// z-index: 15;
+		// position: fixed;
+		// top: 0;
+		// padding: 0 8rem;
+		// width: 100%;
+		height: 100%;
+		@include justify-flex-between(row);
+
+		// &.scrolling {
+		// 	transition: all 0.2s ease;
+		// 	background-color: $color-blue;
+		// }
   }
 
   &__logo-link {
+		margin: 0;
 		height: 50%;
 		@include flex-center(row);
   }

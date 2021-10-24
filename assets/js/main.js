@@ -4,9 +4,9 @@
     // Scrolling nav menu
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 20) {
-        $(".site-header__bar-container").addClass("scrolling");
+        $(".site-header__outer-section").addClass("scrolling");
       } else {
-        $(".site-header__bar-container").removeClass("scrolling");
+        $(".site-header__outer-section").removeClass("scrolling");
       }
     });
 
