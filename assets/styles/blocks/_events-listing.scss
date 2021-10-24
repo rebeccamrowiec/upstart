@@ -1,0 +1,70 @@
+.block-events-listing {
+  &__section {
+    background-color: $color-blue;
+  }
+
+  &__container {
+
+  }
+
+  &__row {
+
+  }
+
+  &__col {
+
+  }
+
+  &__title {
+
+  }
+
+  &__info-container {
+    margin-bottom: 4rem;
+    width: 100%;
+    @include justify-flex-start(row);
+  }
+
+  &__image-wrapper {
+    position: relative;
+    display: block;
+    margin: 0 2rem 0 0;
+    padding-bottom: 35%;
+    width: 50%;
+    height: 0;
+  }
+
+  &__image {
+    position: absolute;
+    border-radius: 5px;
+    @include image-cover;
+  }
+
+  &__info-wrapper {
+    width: 50%;
+  }
+
+  &__date {
+
+  }
+
+  &__intro {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    // margin-bottom: 1.5rem;
+  }
+}
+
+
+
+// Start of MQ's
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 992px) {
+
+}
+// End of MQ's

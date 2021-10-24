@@ -34,12 +34,9 @@ sass --watch assets/styles/main.scss:assets/styles/main.min.css --style compress
 
 // Import Blocks
 @import
-"blocks/accordion",
-"blocks/full-width-image",
+"blocks/events-listing",
 "blocks/text-with-image",
-"blocks/text-editor",
-"blocks/statement",
-"blocks/video-embed";
+"blocks/statement";
 
 // Import Home
 @import
