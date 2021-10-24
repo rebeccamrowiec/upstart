@@ -24,4 +24,38 @@
   </div>
 
 
+
+  <div id="site-navigation" class="site-header__nav" data-base="<?php echo get_template_directory_uri(); ?>">
+    <nav-pane class="top">
+      <pane-content class="section section--site-header site-header__pane-content">
+
+
+        <div class="container-fluid site-header__container">
+          <div class="row site-header__row justify-content-center">
+            <div class="col-12 site-header__col">
+
+
+
+              <!-- Top level nav -->
+              <nav class="top-level">
+                <?php
+                wp_nav_menu(
+                  array(
+                    'theme_location' => 'header-menu',
+                    'container'		 	 => 'false'
+                  )
+                );
+                ?>
+              </nav>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </pane-content>
+    </nav-pane>
+  </div>
 </header>
