@@ -1,18 +1,9 @@
 .home-hero {
   position: relative;
   background-color: $color-blue;
-  // width: 100vw;
   height: 100vh;
 
-  // overflow-x: hidden;
-
   &__mask {
-    // position: absolute;
-    // bottom: 0;
-    // object-position: left bottom;
-    // border: none;
-    // @include image-cover;
-
     position: absolute;
     top: -650px;
     right: -750px;
@@ -20,14 +11,17 @@
   }
 
   &__section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
     height: 100%;
-    @include flex-center(row);
   }
 
   &__container {
     position: relative;
     z-index: 1;
-    height: 55%; // 65%
+    height: calc(100% - 120px);
   }
 
   &__row {
@@ -46,7 +40,7 @@
 
   &__info-wrapper {
     position: absolute;
-    right: 25%;
+    // right: 25%;
     z-index: 1;
   }
 
@@ -74,6 +68,18 @@
 }
 
 @media screen and (min-width: 992px) {
+  .home-hero {
+    &__section {
+      align-items: center;
+    }
 
+    &__container {
+      height: 55%;
+    }
+
+    &__info-wrapper {
+      right: 25%;
+    }
+  }
 }
 // End of MQ's
