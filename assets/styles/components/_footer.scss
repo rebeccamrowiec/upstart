@@ -6,6 +6,13 @@
 
     &--main {
       background-color: $color-blue-dark;
+      color: $color-white;
+    }
+  }
+
+  &__row {
+    &--menu {
+      margin-bottom: 5rem;
     }
   }
 
@@ -13,6 +20,65 @@
     &--logos {
       flex-wrap: wrap;
       @include justify-flex-between(row);
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+    width: 60%;
+  }
+
+  &__menu-title {
+    color: $color-blue;
+    margin-bottom: 2rem;
+  }
+
+  &__menu-container {
+    @include flex-start(row);
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    font-size: 21px;
+    font-family: $open-sans-reg;
+
+    &:first-of-type {
+      margin-right: 5rem;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  }
+
+  span {
+    font-size: 18px;
+    font-family: $open-sans-reg;
+    line-height: 195%;
+
+    &.site-footer__item {
+      border-right: 1px solid $color-white;
+      padding: 0 1rem;
+
+      &:first-of-type {
+        padding-left: 0;
+      }
+
+      &:last-of-type {
+        border: none;
+        padding-right: 0;
+      }
     }
   }
 }

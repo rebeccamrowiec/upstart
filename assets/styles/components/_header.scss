@@ -42,19 +42,8 @@ body.nav-open .site-header__nav {
 	}
 
   &__bar-container {
-		// background-color: transparent;
-		// z-index: 15;
-		// position: fixed;
-		// top: 0;
-		// padding: 0 8rem;
-		// width: 100%;
 		height: 100%;
 		@include justify-flex-between(row);
-
-		// &.scrolling {
-		// 	transition: all 0.2s ease;
-		// 	background-color: $color-blue;
-		// }
   }
 
   &__logo-link {
@@ -220,7 +209,8 @@ body.nav-open .site-header__nav {
 				list-style-type: none;
 				margin-bottom: 0;
 				padding: 0;
-				line-height: 112%;
+				font-family: $noto-serif-bold;
+				line-height: 140%;
 		
 				li {
 					display: flex;
@@ -228,71 +218,12 @@ body.nav-open .site-header__nav {
 					justify-content: flex-start;
 					align-items: center;
 
-					&.header-menu-title {
-						margin-bottom: 4rem;
-						color: $color-white;
-						font-family: $noto-serif-bold;
-						line-height: 122%;
-					}
-
-					&.header-menu-back-button-container {
-						margin-bottom: 4rem;
-					}
-
 					a {
 						color: $color-white;
 						text-decoration: none;
 					}
 				}
 			}
-
-			button[data-action="reveal-submenu"] {
-				cursor: pointer;
-				transition: all 0.2s ease;
-				background: transparent;
-				border: none;
-				color: $color-white;
-				font-family: $roboto-light;
-				line-height: 112%;
-				padding: 0;
-				text-align: left;
-				@include justify-flex-start(row);
-
-				&:hover {
-					opacity: .75;
-				}
-			}
-
-			button[data-action="hide-submenu"] {
-				cursor: pointer;
-				transition: all 0.2s ease;
-				background: transparent;
-				border: 0;
-				color: $color-white;
-				line-height: 122%;
-				font-family: $noto-serif-bold;
-				padding: 0;
-				text-align: left;
-				@include justify-flex-start(row);
-
-				&:hover {
-					opacity: .75;
-				}
-			}
 		}
   }
-
-	&__icon {
-		display: block;
-
-		&--reveal {
-			margin-left: 1rem;
-			width: 30px;
-		}
-
-		&--hide {
-			margin-right: 1rem;
-			width: 40px;
-		}
-	}
 }
