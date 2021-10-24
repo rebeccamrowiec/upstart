@@ -16,7 +16,7 @@
     });
 
     // Add "Menu" heading to nav menu
-    $(".site-header__nav nav.top-level > ul").prepend("<li class=\"header-menu-title\">Menu</li>");
+    // $(".site-header__nav nav.top-level > ul").prepend("<li class=\"header-menu-title\">Menu</li>");
 
     popupNavSetup();
 
