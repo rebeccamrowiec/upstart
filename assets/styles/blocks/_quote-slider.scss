@@ -1,6 +1,6 @@
-.block-news-slider {
+.block-quote-slider {
   &__section {
-    background-color: coral;
+    background-color: rgb(214, 132, 177);
   }
 
   &__container {
@@ -21,16 +21,15 @@
   }
 
   &__slider-container {
-    position: relative;
-  }
-  
-  &__slider {
-    position: absolute;
-    left: 0;
+    // position: relative;
   }
 
-  &__info-container {
-  
+  &__slider {
+
+  }
+
+  &__inner-info-container {
+    @include flex-center(row);
   }
 
   &__image-wrapper {
@@ -50,11 +49,7 @@
   }
 
   &__intro {
-    // display: -webkit-box;
-    // -webkit-line-clamp: 3;
-    // -webkit-box-orient: vertical;
-    // overflow: hidden;
-    // // margin-bottom: 1.5rem;
+
   }
 }
 

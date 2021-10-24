@@ -100,12 +100,32 @@
 
 
     // News slider
-    $('.block-news-slider__slider').slick({
+    // $('.block-news-slider__slider').slick({
+    //   arrows: false,
+    //   draggable: false,
+    //   slidesToShow: 3.5,
+    //   slidesToScroll: 1,
+    //   autoplay: true,
+    //   autoplaySpeed: 0,
+    //   speed: 3000,
+    //   pauseOnHover: false,
+    //   pauseOnFocus: false,
+    //   swipe: false,
+    //   touchMove: false,
+    //   // variableWidth: true,
+    //   cssEase: 'linear'
+    //   // adaptiveHeight: true
+    // });
+
+    // Quote slider
+    $('.block-quote-slider__slider').slick({
       arrows: false,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 5000,
-      speed: 2000,
-      draggable: false
+      speed: 1000,
+      infinite: true,
+      fade: true,
+      cssEase: 'linear'
     });
   });
 })(jQuery);
