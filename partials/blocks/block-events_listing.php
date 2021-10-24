@@ -26,7 +26,7 @@ if ( have_rows( $groupName ) ) : while ( have_rows( $groupName) ) : the_row();
 
   if ( have_posts() ) : ?>
 
-    <section class="section section--block-text-with-image block-events-listing__section">
+    <section class="section section--block-events-listing block-events-listing__section">
       <div class="container-fluid block-events-listing__container">
         <div class="row block-events-listing__row justify-content-center">
           <div class="col-12 col-lg-10 block-events-listing__col">

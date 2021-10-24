@@ -1,7 +1,7 @@
 <header class="site-header">
 <div class="site-header__bar-container">
     <a class="site-header__logo-link" href="<?php echo get_site_url() ?>">
-      <img class="site-header__logo-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/logo.svg" alt="" />
+      <img class="site-header__logo-image" src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/logo.svg" alt="" />
     </a>
   
     <div class="site-header__hamburger-container" data-action="toggle-nav">

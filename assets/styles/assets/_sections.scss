@@ -64,7 +64,18 @@
     }
 
     &--block-text-with-image {
-      padding: 8rem 8rem;
+      margin: 8rem 0 0 ;
+      padding: 8rem;
+    }
+
+    &--block-events-listing {
+      margin: 0 0 8rem;
+      padding: 0 8rem 8rem;
+    }
+
+    &--footer {
+      margin: 0;
+      padding: 8rem;
     }
 
     // &--second {

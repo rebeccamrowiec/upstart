@@ -1,4 +1,18 @@
 .site-footer {
-  background-color: $color-blue-dark;
-  height: 1000px;
+  &__section {
+    &--logos {
+      background-color: $color-blue-pale;
+    }
+
+    &--main {
+      background-color: $color-blue-dark;
+    }
+  }
+
+  &__col {
+    &--logos {
+      flex-wrap: wrap;
+      @include justify-flex-between(row);
+    }
+  }
 }
