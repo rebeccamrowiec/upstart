@@ -35,8 +35,9 @@ sass --watch assets/styles/main.scss:assets/styles/main.min.css --style compress
 // Import Blocks
 @import
 "blocks/events-listing",
-"blocks/text-with-image",
-"blocks/statement";
+"blocks/news-slider",
+"blocks/statement",
+"blocks/text-with-image";
 
 // Import Home
 @import

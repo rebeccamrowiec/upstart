@@ -96,6 +96,17 @@
       // Hide any old active
       $("nav-pane").removeClass("current");
     });
+
+
+
+    // News slider
+    $('.block-news-slider__slider').slick({
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 2000,
+      draggable: false
+    });
   });
 })(jQuery);
 // End of Doc.ready
