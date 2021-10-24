@@ -1,60 +1,92 @@
 .section {
-  margin: 2rem 0;
+  margin: 3rem 0;
   padding: 0 1rem;
+
+  &--site-header {
+    margin: 0;
+  }
 
   &--home-hero {
     margin: 0;
   }
 
-  // &--first {
-  //   margin: 10rem 0 2rem;
-  // }
+  &--block-text-with-image {
+    margin: 3rem 0 0;
+    padding: 3rem 1rem;
+  }
 
-  // &--second {
-  //   padding: 2rem 1rem;
-  // }
+  &--block-events-listing {
+    margin: 0;
+    padding: 0 1rem 3rem;
+  }
 
-  // &--instagram-heading {
-  //   margin: 2rem 0 0;
-  //   padding: 0 1rem;
-  // }
-
-  // &--instagram-slider {
-  //   margin: 0 0 2rem;
-  //   padding: 0;
-  // }
+  &--footer {
+    margin: 0;
+    padding: 3rem 1rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
   .section {
-    margin: 3rem 0;
-    padding: 0 2rem;
+    margin: 4rem 0;
+    padding: 0 4rem;
+
+    &--site-header {
+      margin: 0;
+    }
 
     &--home-hero {
       margin: 0;
     }
 
-    // &--first {
-    //   margin: 6rem 0 3rem;
-    // }
+    &--block-text-with-image {
+      margin: 4rem 0 0;
+      padding: 4rem;
+    }
 
-    // &--second {
-    //   padding: 3rem 2rem;
-    // }
+    &--block-events-listing {
+      margin: 0;
+      padding: 0 4rem 4rem;
+    }
 
-    // &--instagram-heading {
-    //   margin: 3rem 0 0;
-    //   padding: 0 2rem;
-    // }
-
-    // &--instagram-slider {
-    //   margin: 0 0 3rem;
-    //   padding: 0;
-    // }
+    &--footer {
+      margin: 0;
+      padding: 4rem;
+    }
   }
 }
 
-@media screen and (min-width: 992px) {
+// @media screen and (min-width: 992px) {
+//   .section {
+//     margin: 4rem 0;
+//     padding: 0 4rem;
+
+//     &--site-header {
+//       margin: 0;
+//     }
+
+//     &--home-hero {
+//       margin: 0;
+//     }
+
+//     &--block-text-with-image {
+//       margin: 4rem 0 0 ;
+//       padding: 4rem;
+//     }
+
+//     &--block-events-listing {
+//       margin: 0;
+//       padding: 0 4rem 4rem;
+//     }
+
+//     &--footer {
+//       margin: 0;
+//       padding: 4rem;
+//     }
+//   }
+// }
+
+@media screen and (min-width: 1400px) {
   .section {
     margin: 8rem 0;
     padding: 0 8rem;
@@ -81,27 +113,5 @@
       margin: 0;
       padding: 8rem;
     }
-
-    // &--second {
-    //   padding: 5rem 3rem;
-    // }
-
-    // &--instagram-heading {
-    //   margin: 5rem 0 0;
-    //   padding: 0 3rem;
-    // }
-
-    // &--instagram-slider {
-    //   margin: 0 0 5rem;
-    //   padding: 0;
-    // }
   }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-  // .section {
-  //   &--first {
-  //     margin: 10rem 0 5rem;
-  //   }
-  // }
 }
