@@ -130,6 +130,17 @@
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .home-hero {
+    &__image-wrapper {
+      &--desktop {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .home-hero {
     &__mask {  
