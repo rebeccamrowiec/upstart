@@ -1,6 +1,7 @@
 .block-text-with-image {
   &__section {
     position: relative;
+    z-index: 1;
     background-color: $color-blue;
     text-align: center;
 
@@ -70,6 +71,14 @@
       &::before {
         display: none;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .block-text-with-image {
+    &__section {
+      z-index: initial;
     }
   }
 }
