@@ -140,4 +140,12 @@
     }
   }
 }
+
+@media screen and (min-width: 2560px) {
+  .block-events-listing {
+    &::before {
+      display: none;
+    }
+  }
+}
 // End of MQ's
