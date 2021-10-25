@@ -13,7 +13,7 @@
   }
 
   &__section {
-    background-color: $color-blue;
+    background-color: $color-white;
   }
 
   &__container {
@@ -26,7 +26,11 @@
   }
 
   &__col {
-
+    &--card {
+      &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        display: none;
+      }
+    }
   }
 
   &__title {
@@ -89,7 +93,19 @@
 }
 
 @media screen and (min-width: 992px) {
+  .block-events-listing {
+    &__section {
+      background-color: $color-blue;
+    }
 
+    &__col {
+      &--card {
+        &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

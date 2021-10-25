@@ -45,7 +45,7 @@ if ( have_rows( $groupName ) ) : while ( have_rows( $groupName) ) : the_row();
               $link = get_permalink($post->ID); 
               $date = get_field( 'event_date', $post->ID ); // DATE PICKER ?>
 
-              <div class="col-12 col-lg-5 block-events-listing__col">
+              <div class="col-12 col-lg-5 block-events-listing__col block-events-listing__col--card">
                 <div class="block-events-listing__info-container">
                   <a class="block-events-listing__image-wrapper" href="<?php echo $link; ?>">
                     <img class="block-events-listing__image" src="<?php echo $image; ?>" />
