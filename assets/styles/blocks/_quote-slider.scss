@@ -2,7 +2,7 @@
   &__section {
     background-color: rgb(214, 132, 177);
 
-    display: none;
+    // display: none;
   }
 
   &__container {
@@ -35,11 +35,13 @@
   }
 
   &__image-wrapper {
- 
+    width: 215px;
+    height: 215px;
   }
 
   &__image {
- 
+    border-radius: 200px;
+    @include image-cover;
   }
 
   &__info-wrapper {

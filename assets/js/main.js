@@ -133,11 +133,12 @@
     // Quote slider
     $('.block-quote-slider__slider').slick({
       arrows: false,
-      autoplay: false,
-      autoplaySpeed: 5000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       speed: 1000,
       infinite: true,
       fade: true,
+      // variableWidth: true,
       cssEase: 'linear'
     });
   });
