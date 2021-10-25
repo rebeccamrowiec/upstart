@@ -5,9 +5,16 @@
 
   &__mask {
     position: absolute;
-    top: -650px;
-    right: -750px;
     z-index: 1;
+
+    &--mobile {
+      top: -230px;
+      right: -280px;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   &__section {
@@ -56,7 +63,7 @@
 
   &__image-wrapper {
     position: relative;
-    
+
     &--desktop {
       display: none;
     }
@@ -82,6 +89,18 @@
 
 @media screen and (min-width: 992px) {
   .home-hero {
+    &__mask {  
+      &--mobile {
+        display: none;
+      }
+  
+      &--desktop {
+        display: block;
+        top: -650px;
+        right: -750px;
+      }
+    }
+
     &__section {
       align-items: center;
     }
