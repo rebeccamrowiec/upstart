@@ -44,34 +44,29 @@
   }
   
   &__featured-logo-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
+    width: 100%;
+    @include flex-center(row);
+  }
 
-    &:first-of-type {
-      justify-content: flex-start;
-    }
-
-    &:last-of-type {
-      justify-content: flex-end;
-    }
+  &__featured-logo-wrapper + &__featured-logo-wrapper  {
+    margin-top: 2rem;
   }
 
   &__featured-logo {
     display: block;
     
     &--one {
-      width: 80%;
-    }
-
-    &--two {
       width: 50%;
     }
 
+    &--two {
+      width: initial;
+      height: 120px;
+    }
+
     &--three {
-      width: 40%;
+      width: initial;
+      height: 70px;
     }
   }
 
@@ -147,7 +142,39 @@
 
 // Start of MQ's
 @media screen and (min-width: 576px) {
+  .site-footer {
+    &__featured-logo-wrapper {
+      width: 30%;
 
+      &:first-of-type {
+        justify-content: flex-start;
+      }
+  
+      &:last-of-type {
+        justify-content: flex-end;
+      }
+    }
+
+    &__featured-logo-wrapper + &__featured-logo-wrapper  {
+      margin-top: 0;
+    }
+
+    &__featured-logo {  
+      &--one {
+        width: 80%;
+      }
+  
+      &--two {
+        width: 50%;
+        height: initial;
+      }
+  
+      &--three {
+        width: 40%;
+        height: initial;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
