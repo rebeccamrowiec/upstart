@@ -1,6 +1,19 @@
 // Start of Doc.ready
 (function ($) {
   $(document).ready(function () {
+    // Height of mobile/tablet devices
+    var viewport_width = $("body").outerWidth();
+    var viewport_height = window.innerHeight;
+
+    if ( viewport_width < 1025 ) {
+      // SET
+      $(".home-hero").css({
+        "height" : viewport_height
+      });
+    }
+
+
+
     // Scrolling nav menu
     $(window).on("scroll", function () {
       if ($(window).scrollTop() > 20) {

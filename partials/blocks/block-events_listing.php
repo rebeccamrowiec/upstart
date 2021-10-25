@@ -63,7 +63,7 @@ if ( have_rows( $groupName ) ) : while ( have_rows( $groupName) ) : the_row();
 
           </div>
 
-          <div class="row block-events-listing__row justify-content-center">
+          <div class="row block-events-listing__row block-events-listing__row--cta justify-content-center">
             <div class="col-12 col-lg-10 block-events-listing__col">
               <a class="button" href="<?php echo $cta_url ?>" target="<?php echo $cta_target ?>"><span><?php echo $cta_title ?></span></a>
             </div>

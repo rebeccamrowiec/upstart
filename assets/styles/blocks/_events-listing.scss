@@ -23,7 +23,10 @@
   }
 
   &__row {
-
+    &--cta {
+      border-top: 1px solid #707070;
+      padding-top: 2rem;
+    }
   }
 
   &__col {
@@ -90,7 +93,13 @@
 
 // Start of MQ's
 @media screen and (min-width: 576px) {
-
+  .block-events-listing {
+    &__row {
+      &--cta {
+        padding-top: 3rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -109,6 +118,13 @@
 
     &__section {
       background-color: $color-blue;
+    }
+
+    &__row {
+      &--cta {
+        border: none;
+        padding-top: 0;
+      }
     }
 
     &__col {
