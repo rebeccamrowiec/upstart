@@ -12,7 +12,7 @@
 
   &__row {
     &--menu {
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
   }
 
@@ -21,8 +21,27 @@
       flex-wrap: wrap;
       @include justify-flex-between(row);
     }
-  }
 
+    &--main-top {
+      @include justify-flex-start(column);
+
+      .socials__container {
+        display: none;
+      }
+    }
+
+    &--menu {
+      @include justify-flex-start(column);
+    }
+
+    &--copyright {
+      @include justify-flex-start(column);
+    }
+
+    &--item {
+      display: none;
+    }
+  }
   
   &__featured-logo-wrapper {
     display: flex;
@@ -59,11 +78,13 @@
   &__logo {
     display: block;
     margin-bottom: 2rem;
+    width: 140px;
   }
 
   &__text {
     margin-bottom: 4rem;
-    width: 60%;
+    width: 100%;
+    text-align: center;
   }
 
   &__menu-title {
@@ -79,12 +100,12 @@
     list-style-type: none;
     margin-bottom: 0;
     padding: 0;
-
+    text-align: center;
     font-size: 21px;
     font-family: $open-sans-reg;
 
     &:first-of-type {
-      margin-right: 5rem;
+      margin-right: 1rem;
     }
 
     li {
@@ -100,18 +121,92 @@
     font-family: $open-sans-reg;
     line-height: 195%;
 
+    &.site-footer__copyright {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
     &.site-footer__item {
-      border-right: 1px solid $color-white;
+      border-left: 1px solid $color-white;
       padding: 0 1rem;
 
       &:first-of-type {
+        border: none;
         padding-left: 0;
       }
 
       &:last-of-type {
-        border: none;
+        // border: none;
         padding-right: 0;
       }
     }
   }
 }
+
+
+
+// Start of MQ's
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 992px) {
+  .site-footer {
+    &__row {
+      &--menu {
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__col {
+      &--main-top {
+        display: block;
+
+        .socials__container {
+          display: flex;
+        }
+      }
+
+      &--menu {
+        display: block;
+      }
+
+      &--copyright {
+        display: block;
+
+        .socials__container {
+          display: none;
+        }
+      }
+
+      &--item {
+        display: block;
+      }
+    }
+
+    &__logo {
+      width: initial;
+    }
+
+    &__text {
+      width: 60%;
+      text-align: left;
+    }
+
+    ul {
+      text-align: left;
+
+      &:first-of-type {
+        margin-right: 5rem;
+      }
+    }
+
+    span {
+      &.site-footer__copyright {
+        margin-top: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+// End of MQ's

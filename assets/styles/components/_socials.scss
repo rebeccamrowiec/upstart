@@ -15,6 +15,14 @@
   }
 }
 
+.site-footer {
+  .socials {
+    &__link {
+      margin: 0 1rem;
+    }
+  }
+}
+
 
 
 // Start of MQ's
@@ -26,6 +34,24 @@
   
     &__icon {
       height: initial;
+    }
+  }
+
+  .site-footer {
+    .socials {
+      &__link {
+        margin: 0 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .site-footer {
+    .socials {
+      &__link {
+        margin: 0 3rem 0 0;
+      }
     }
   }
 }
