@@ -12,7 +12,7 @@ $image = get_sub_field('image'); ?>
 	<section class="section section--block-text-with-image block-text-with-image__section">
     <div class="container-fluid block-text-with-image__container">
       <div class="row block-text-with-image__row justify-content-evenly align-items-center">
-        <div class="col-12 col-lg-4 block-text-with-image__col">
+        <div class="col-12 col-lg-5 col-xxl-4 block-text-with-image__col">
           <div class="block-text-with-image__info-container">
             <img class="block-text-with-image__icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/curly-arrow.svg" />
             <div class="block-text-with-image__info-wrapper">
@@ -21,7 +21,7 @@ $image = get_sub_field('image'); ?>
           </div>
         </div>
 
-        <div class="col-12 col-lg-5 block-text-with-image__col">
+        <div class="col-12 col-lg-4 col-xxl-5 block-text-with-image__col">
           <div class="block-text-with-image__image-wrapper">
             <!-- <div class="overlay overlay--border"></div> -->
             <img class="block-text-with-image__image" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />

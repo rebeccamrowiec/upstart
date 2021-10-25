@@ -1,57 +1,58 @@
 .block-text-with-image {
   &__section {
+    position: relative;
     background-color: $color-blue;
-    // @include flex-center(row);
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 70%;
+      right: 0;
+      left: 0;
+      // z-index: 1;
+      background: $color-white;
+    }
   }
 
   &__container {
-    // height: 55%; // 65%
+ 
     position: relative;
     z-index: 1;
   }
 
   &__row {
-    // height: 100%;
+
   }
 
   &__col {
 
   }
-  
-  // &__info-container {
-  //   position: relative;
-  //   height: 100%;
-  //   @include justify-flex-end(row);
-  // }
 
   &__info-container {
     position: relative;
-    // right: 25%;
-    // z-index: 1;
   }
 
   &__icon {
     position: absolute;
-    top: -70px;
-    left: -70px;
+    top: -30px;
+    left: -40px;
+    width: 100px;
   }
 
   &__info-wrapper {
     position: relative;
-    // right: 25%;
-    // z-index: 1;
   }
 
   &__image-wrapper {
     position: relative;
-    // height: 100%;
   }
 
   &__image {
     border-radius: 5px;
     @include image-cover;
   }
-
 }
 
 
@@ -62,6 +63,24 @@
 }
 
 @media screen and (min-width: 992px) {
+  .block-text-with-image {
+    &__section {
+      text-align: left;
 
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .block-text-with-image {
+    &__icon {
+      top: -70px;
+      left: -70px;
+      width: initial;
+    }
+  }
 }
 // End of MQ's

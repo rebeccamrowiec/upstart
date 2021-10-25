@@ -2,14 +2,15 @@
   position: relative;
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 40%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    background: $color-white;
+    // content: "";
+    // display: none;
+    // position: absolute;
+    // top: 40%;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // z-index: 2;
+    // background: $color-white;
   }
 
   &__section {
@@ -94,6 +95,18 @@
 
 @media screen and (min-width: 992px) {
   .block-events-listing {
+    &::before {
+      content: "";
+      // display: block;
+      position: absolute;
+      top: 40%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      background: $color-white;
+    }
+
     &__section {
       background-color: $color-blue;
     }
