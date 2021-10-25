@@ -15,12 +15,18 @@ $home_hero_image = get_field('home_hero_image'); // IMAGE ARR
           <div class="home-hero__info-container">
             <div class="home-hero__info-wrapper">
               <h1 class="home-hero__title"><?php echo $home_hero_title; ?></h1>
+
+              <div class="home-hero__image-wrapper home-hero__image-wrapper--mobile">
+                <div class="overlay overlay--border"></div>
+                <img class="home-hero__image" src="<?php echo esc_url($home_hero_image['url']); ?>" alt="<?php echo esc_attr($home_hero_image['alt']); ?>" />
+              </div>
+
               <!-- <div class="socials socials--header"> -->
               <?php get_template_part('partials/common/socials'); ?>
               <!-- </div> -->
             </div>
 
-            <div class="home-hero__image-wrapper">
+            <div class="home-hero__image-wrapper home-hero__image-wrapper--desktop">
               <div class="overlay overlay--border"></div>
               <img class="home-hero__image" src="<?php echo esc_url($home_hero_image['url']); ?>" alt="<?php echo esc_attr($home_hero_image['alt']); ?>" />
             </div>

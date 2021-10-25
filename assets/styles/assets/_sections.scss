@@ -26,6 +26,17 @@
   }
 }
 
+.site-header {
+  &__nav {
+    pane-content {
+      padding: 3rem 1rem;
+    }
+  }
+}
+
+
+
+// Start of MQ's
 @media screen and (min-width: 576px) {
   .section {
     margin: 4rem 0;
@@ -52,6 +63,14 @@
     &--footer {
       margin: 0;
       padding: 4rem;
+    }
+  }
+
+  .site-header {
+    &__nav {
+      pane-content {
+        padding: 4rem;
+      }
     }
   }
 }
@@ -114,4 +133,13 @@
       padding: 8rem;
     }
   }
+
+  .site-header {
+    &__nav {
+      pane-content {
+        padding: 8rem;
+      }
+    }
+  }
 }
+// End of MQ's
