@@ -1,3 +1,17 @@
 .button {
+  position: relative;
+  padding-left: 1rem;
+  color: $color-grey-dark;
   font-family: $roboto-med;
+  text-decoration: none;
+
+  &::before {
+    content: url('../images/icons/blue-arrow.svg');
+    position: absolute;
+    left: 0;
+  }
+
+  span {
+    position: relative;
+  }
 }

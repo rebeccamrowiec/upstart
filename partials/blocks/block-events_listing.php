@@ -54,7 +54,7 @@ if ( have_rows( $groupName ) ) : while ( have_rows( $groupName) ) : the_row();
                   <div class="block-events-listing__info-wrapper">
                     <h3 class="block-events-listing__date"><?php if ($date) { echo $date; } else { echo "TBC"; } ?></h3>
                     <p class="block-events-listing__intro"><?php echo $intro; ?></p>
-                    <a class="button" href="<?php echo $link; ?>">Find Out More</a> 
+                    <a class="button" href="<?php echo $link; ?>"><span>Find Out More</span></a> 
                   </div>
                 </div>
               </div>
@@ -65,7 +65,7 @@ if ( have_rows( $groupName ) ) : while ( have_rows( $groupName) ) : the_row();
 
           <div class="row block-events-listing__row justify-content-center">
             <div class="col-12 col-lg-10 block-events-listing__col">
-              <a class="button" href="<?php echo $cta_url ?>" target="<?php echo $cta_target ?>"><?php echo $cta_title ?></a>
+              <a class="button" href="<?php echo $cta_url ?>" target="<?php echo $cta_target ?>"><span><?php echo $cta_title ?></span></a>
             </div>
           </div>
         </div>
